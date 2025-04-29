@@ -112,6 +112,12 @@ footer{
 .footer-elem {
     padding: 1rem;
     margin: 0 4rem;
+    
+}
+
+.footer-elem a{
+    text-decoration: none;
+    color: #746a35;
 }
 
 .footer-elem img{
@@ -148,6 +154,80 @@ footer{
 .hidden{
     display: none;
 }
+
+/* ===== Contact Blocks Styling ===== */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.contact-block {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem 1.5rem;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.contact-block:hover {
+    transform: scale(1.05);
+}
+
+.contact-block img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.contact-block a {
+    display: block;
+    font-weight: bold;
+    color: #634639;
+    text-decoration: none;
+    font-size: 1rem;
+    word-break: break-word;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Petits écrans */
+@media (max-width: 600px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-block {
+        width: 90%;
+    }
+}
+
+/* Moyens écrans */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .contact-container {
+        justify-content: space-around;
+    }
+
+    .contact-block {
+        width: 45%;
+    }
+}
+
+/* Grands écrans */
+@media (min-width: 1025px) {
+    .contact-block {
+        width: 250px;
+    }
+}
+
+
+
 
 /* ========== RESPONSIVE DESIGN ========== */
 
